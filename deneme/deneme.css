@@ -24,14 +24,20 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-grow: 1;
 }
 #LOGO{
     margin-left: 20px;
     font-size: 4em;
     border-right: 1px solid beige;
+    flex-grow: 0.1;
 }
 #LOGO::after{
     content: "-";
+    visibility: hidden;
+}
+#space{
+    flex-grow: 6;
     visibility: hidden;
 }
 .navel{
