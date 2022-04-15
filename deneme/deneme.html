@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hover</title>
     <link rel="stylesheet" href="deneme.css">
-    <!--GOOGLE FONTS-->
-    <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -16,19 +14,29 @@
         <span style="margin-left: 20px;font-size:small;font-family: 'Whisper', cursive;">SLOGAN HERE</span>
         <div id = "space">SPACE</div>
         <div id="navright">
-            <div class="navel">HAKKIMIZDA</div>
-            <div class="navel">PORTFOLYO</div>
-            <div class="navel">İLETİŞİM</div>
-            <div class="navel">YARDIM</div>
+            <a href="#" class="navel">HAKKIMIZDA</a>
+            <a href="#" class="navel">PORTFOLYO</a>
+            <a href="#" class="navel">İLETİŞİM</a>
+            <a href="#" class="navel">YARDIM</a>
         </div>
     </div>
-    <div id="donate" style="height: 200px;width:200px;float:right;">
+    <div id="donate" style="height: 200px;width:200px;float:right;position: fixed;top:100px;right: 0px;z-index: 2;">
         <a id = "handiconlink"href="#"><i id = "handicon" class="fa-solid fa-hand-holding-dollar"></i></a>
         <svg style="height: 200px;width: 200px;float:right;">
             <path d="M 0 0 L 200 0 L 200 200"
-            fill="beige"/>
-            <line id = "diognalBorder"x1="0" y1="0" x2="200" y2="200"/>
+            fill="rgb(77,77,77)"/>
+            <path fill="rgb(77,77,77)" id = "beigeBorder" d= " M 0 0 C 0,0 75,100 200,200" style="transform: translateX(1px) translateY(-1px);"/>
         </svg>
     </div>
+    <div id="Container">
+        <a href="#" class="article"><img src="randomimage.jpg" style = "width: 100%;border: 1px solid rgb(77,77,77);border-radius: 3px;"alt="bulunamadı"><h2>ARTICLE</h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquam est blanditiis impedit? Culpa dicta quo, et cupiditate ab explicabo quidem eaque atque corrupti voluptatum officia aperiam sequi ad pariatur ipsam asperiores voluptatem temporibus nam possimus qui. Architecto optio itaque, sed accusamus repudiandae corporis natus cum rerum adipisci iste reprehenderit deleniti minus fugit recusandae laborum excepturi error tempore quas, provident perspiciatis, sunt inventore nemo! Incidunt aliquam, nemo officiis ratione earum, itaque voluptatibus quia consequuntur, quam quo nam adipisci quaerat! Rerum odio ea nostrum consectetur beatae doloremque aliquid porro dolor et aut aspernatur voluptatum qui, quibusdam est a quos earum minus.</a>
+        <a href="#" class="article">ARTICLE</a>
+        <a href="#" class="article">ARTICLE</a>
+        <a href="#" class="article">ARTICLE</a>
+    </div>
+
+    <!--FOOTERSECTION-->
+    <svg style="width:100%;height:50px;transform: translateY(24px);"><path style = "transform:translateY(30px);"stroke="beige" stroke-width="3" fill="rgb(77,77,77)" d="M-20 0 C 0,0 500,-55 2000,0" /></svg>
+    <div id="Footer"><span id="FooterText">FOOTER</span></div>
 </body>
 </html>
