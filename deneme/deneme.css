@@ -4,10 +4,12 @@
 }
 html,body{
     margin:0;
-    height: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: tomato;
     color: beige;
+}
+body{
+    overflow: hidden;
 }
 
 #topnav{
@@ -17,6 +19,10 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position:fixed;
+    top: 0;
+    background-color: rgb(77, 77, 77);
+    z-index: 3;
 }
 #navright{
     height: 100px;
@@ -46,6 +52,8 @@ html,body{
     box-sizing: border-box;
     transition: padding 0.2s ease-in;
     text-shadow: 1px 1px 0px;
+    color: beige;
+    text-decoration: none;
 }
 .navel:hover{
     color: rgb(255, 181, 168);
@@ -55,25 +63,64 @@ html,body{
     height: 40px;
     cursor: pointer;
 }
-#diognalBorder{
+#beigeBorder{
     stroke: beige;
     stroke-width: 2;
-    display: none;
 }
 #handicon{
     position:absolute;
     right: 20px;
-    top:115px;
+    top:20px;
     z-index: 1;
     font-size: 4em;
-    color: tomato
+    color: wheat;
 }
 #handicon:hover{
-    color: beige;
+    color: rgb(255, 181, 168);
 }
 #handiconlink:hover+svg>path{
-    display: none;
+    fill: wheat;
 }
-#handiconlink:hover+svg>line{
-    display: inline;
+#Container{
+    --articleCount:6;
+    width: 60%;
+    margin-left: 20%;
+    height:1800px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    grid-template-rows: repeat(calc(var(--articleCount)/2),800px);
+    overflow: hidden;
+    padding: 15px;
+}
+.article{
+    background-color: wheat;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in;
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+    padding: 35px;
+    font-size: 1.3em;
+    text-align:left;
+    overflow: hidden;
+}
+.article:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: rgba(245, 222, 179, 0.8);
+    overflow-y: auto;
+}
+#Footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(77, 77, 77);
+
+}
+#FooterText{
+    position: absolute;
+    top: 20px;
+    left: 8%;
 }
