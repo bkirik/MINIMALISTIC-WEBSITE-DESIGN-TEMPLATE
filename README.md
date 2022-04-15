@@ -1,3 +1,3 @@
 # MINIMALISTIC-WEBSITE-DESIGN-TEMPLATE
 
-![image](https://user-images.githubusercontent.com/103427739/163645111-3255f781-83df-4213-9408-e284634d4fb2.png)
+![image](https://user-images.githubusercontent.com/103427739/163645833-baeb6db9-7ad0-46f1-bc88-18006359c77a.png)
